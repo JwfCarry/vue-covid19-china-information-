@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <!-- 1顶部图片 -->
-    <img src="../assets/images/源哥防疫.jpg" width="100%" alt="" />
+    <img src="../assets/images/yiqingtong.jpg" width="100%" alt="" />
     <!-- 2病毒信息 -->
     <CovInfo />
     <!-- 3疫情小导航 -->
@@ -31,17 +31,29 @@
     </div>
     <!-- 4.数据统计 -->
     <cov-number />
+    <!-- 5.中国疫情地图 -->
+    <china-map />
+    <!-- 6世界疫情地图 -->
+    <world-map />
+    <!-- 轮播图 -->
+    <Swiper />
   </div>
-</template>
+</template> 
 
 <script>
 import CovInfo from "./CovInfo.vue"; //引入病毒信息组件
 import CovNumber from "./CovNumber.vue"; //引入疫情数据数字统计组件
+import ChinaMap from "./ChinaMap.vue"; //引入中国疫情信息地图组件
+import WorldMap from "./WorldMap";
+import Swiper from "../components/Swiper.vue";
 export default {
   name: "Home",
   components: {
     CovInfo,
     CovNumber,
+    ChinaMap,
+    WorldMap,
+    Swiper,
   },
 };
 </script>

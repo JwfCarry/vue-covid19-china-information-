@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Hesuan from '../views/Hesuan.vue'
 import Area from '../views/Area.vue'
+import Prevention from '../views/Prevention'
+import Citys from '../views/Citys'
 const routes = [{
     path: '/',
     name: 'Home',
@@ -15,6 +17,16 @@ const routes = [{
     path: '/area',
     name: 'Area',
     component: Area
+}, {
+    path: '/prevention',
+    name: 'Prevention',
+    component: Prevention
+},
+{
+    path: '/citys/:cityname',
+    name: 'Citys',
+    component: Citys,
+    props: true
 }
 ]
 const router = new VueRouter({
