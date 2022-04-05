@@ -7,5 +7,8 @@ const base = {
     worldData: '/api/94/220?format=json&appid=15740&sign=b19b4b50603e1cda65441645aa4fbee8',//世界疫情数据
     city: '/api/94/221',//城市接口
     swiperBanner: 'http://iwenwiki.com/wapicovid19/ncovimg.php',//轮播图疫情
+    travel: '/api/springTravel/citys?key=674d6ec65afc51339176339dc899e16e', //疫情政策城市数据接口
+    travelQuery: '/api/springTravel/query?key=674d6ec65afc51339176339dc899e16e',//城市疫情查询政策&from=10191&to=10349
+
 }
 export default base

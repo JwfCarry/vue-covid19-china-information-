@@ -39,7 +39,6 @@ export default {
   mounted() {
     //获取轮播图数据
     api.getSwiperBanner().then((res) => {
-      console.log(res.data);
       this.banner = res.data.result;
     });
   },

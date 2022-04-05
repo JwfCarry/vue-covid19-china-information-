@@ -1,7 +1,9 @@
 <template>
   <div class="home">
     <!-- 1顶部图片 -->
-    <img src="../assets/images/yiqingtong.jpg" width="100%" alt="" />
+    <div class="logo">
+      <img src="../assets/images/yiqingtong.jpg" width="100%" alt="" />
+    </div>
     <!-- 2病毒信息 -->
     <CovInfo />
     <!-- 3疫情小导航 -->
@@ -25,8 +27,10 @@
         </router-link>
       </div>
       <div>
-        <img src="../assets/images/4.png" alt="" />
-        <div>出行政策</div>
+        <router-link to="/travel">
+          <img src="../assets/images/4.png" alt="" />
+          <div>出行政策</div>
+        </router-link>
       </div>
     </div>
     <!-- 4.数据统计 -->

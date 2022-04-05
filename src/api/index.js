@@ -28,6 +28,17 @@ const api = {
     //获取轮播图数据
     getSwiperBanner() {
         return axios.get(base.swiperBanner);
+    },
+    //城市数据查询
+    getTravel() {
+        return axios.get(base.travel)
+    },
+    //城市出行政策
+    getTravelQuery(params) {//params={from:'',to:''}
+        return axios.get(base.travelQuery, {
+            params
+        })
     }
+
 }
 export default api
